@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.vercel
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+event-planner-backend/*.db
+event-planner-backend/*.db-*
+*.sqlite
+*.sqlite3

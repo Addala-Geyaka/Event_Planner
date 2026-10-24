@@ -1,0 +1,10 @@
+.git/
+.env
+.env.*
+!.env.example
+event-planner-backend/*.db
+event-planner-backend/*.db-*
+event-planner-backend/__pycache__/
+event-planner-frontend/node_modules/
+event-planner-frontend/dist/
+Event_Planner/

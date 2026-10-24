@@ -1,0 +1,22 @@
+{
+  "services": {
+    "web": {
+      "root": "event-planner-frontend/"
+    },
+    "api": {
+      "root": "event-planner-backend/",
+      "entrypoint": "main:app",
+      "framework": "fastapi"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": { "service": "api" }
+    },
+    {
+      "source": "/(.*)",
+      "destination": { "service": "web" }
+    }
+  ]
+}
